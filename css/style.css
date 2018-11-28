@@ -58,77 +58,99 @@ table {
 
 body {
   background-color: #dadada;
-  font-size: 1.5em;
+  font-size: 10px;
+	display:block;
 }
 
 .container {
-  margin: 15px auto;
-  width: 480px;
+  margin: 0 auto;
+	padding: 0;
+	width: 100%;
 }
 
-.emphasis {
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size:1em;
-  text-align: center;
+.header {
+	padding: 8% 0;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size:1.5em;
+	text-align: center;
+	letter-spacing: 0.2em;
 }
+
 
 div {
-  float: left;
-  margin: 1% 0;
-  padding: 20px 25px;
+  margin: 0;
+  padding: 0;
   width: 100%
 }
 
-.preview-baku {
-  display: block;
-  float: left;
-  margin: 3%;
-  padding: 2%;
-  width: 40%;
+.preview {
+	margin-bottom: 5%;
+	padding: 8% 0 53% 0;
+	width: 100%;
+	font-size: 2.5em;
 }
 
-.preview-london {
-  display: block;
-  float: left;
-  margin: 3%;
-  padding: 2%;
-  width: 40%;
+.baku {
+	background-image: url("../images/baku.jpg");
+  background-size: cover;
 }
 
-.preview-madrid {
-  display: block;
-  float: left;
-  margin: 3%;
-  padding: 2%;
-  width: 40%;
+.london {
+	background-image: url("../images/london.png");
+    background-size: cover;
 }
 
-.preview-rome {
-  display: block;
-  float: left;
-  margin: 3%;
-  padding: 2%;
-  width: 40%;
+.madrid {
+	background-image: url("../images/madrid.jpg");
+  background-size: cover;
+}
+
+.rome {
+	background-image: url("../images/rome.jpg");
+    background-size: cover;
 }
 
 h1 {
   font-size: 1.5em;
   padding:1% 1%;
-  text-align: center;
+  text-align: left;
 }
 
 
-@media screen and (min-width: 768px){
-   div {
-    margin: 1%;
-    width: 48%;
+@media screen and (min-width: 575px){
+   .container {
+		padding: 0 10%;
+		display:inline-block;
   }
+	.header {
+		font-size: 2em;
+	}
+
+	.preview {
+		margin: 0 2% 2% 0;
+		padding: 5% 0 25% 5%;
+		width: 48%;
+		font-size: 2em;
+		float: left;
+	}
 }
 
-@media screen and (min-width: 1024px){
-   div {
-    margin: 1%;
-    width: 24%;
-  }
+@media screen and (min-width: 991px){
+	.container {
+	 padding: 0 10%;
+	 display:inline-block;
+ }
+ .header {
+	 font-size: 2em;
+	 padding: 6% 0;
+ }
+
+ .preview {
+	 margin: 0 2% 2% 0;
+	 padding: 2% 0 25% 2%;
+	 width: 23%;
+	 font-size: 3em;
+	 float: left;
+ }
 }
